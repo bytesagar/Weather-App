@@ -1,9 +1,4 @@
-const $ = selector =>  document.querySelector(selector);
-const weatherContainer = $('.weather-container');
-const form = $('.input-control form');
-const notificationElement = $('.notification');
-const input = $('.input-control input')
-const apiKey = "5cdbab9eb56a033234a450178bc4143c";
+
 const inputVal = 'China';
 
 form.addEventListener('submit', (e) =>{
@@ -29,7 +24,7 @@ form.addEventListener('submit', (e) =>{
                 <div class="temp-con">
                 <h1 class="temp">${Math.round(main.temp)}<sup>°C</sup></h1>
                 <div class="temp-desc">
-                <img src=${icon} alt=${weather[0]['main']} />
+                <img src=${icon} alt=${weather[0]['main']} class="current-icon"/>
                 <span>${weather[0]['description'].toUpperCase()}</span>
                 </div>
                 </div>
