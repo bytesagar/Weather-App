@@ -3,7 +3,6 @@ const weatherContainer = $('.weather-container');
 const form = $('.input-control form');
 const notificationElement = $('.notification');
 const input = $('.input-control input')
-const apiKey = "5cdbab9eb56a033234a450178bc4143c";
 const inputVal = 'China';
 
 form.addEventListener('submit', (e) =>{
