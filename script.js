@@ -1,4 +1,4 @@
-
+const form = $('.input-control form');
 form.addEventListener('submit', (e) =>{
         e.preventDefault();
         const inputVal = input.value;
