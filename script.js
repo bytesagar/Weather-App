@@ -1,6 +1,7 @@
 
 const inputVal = 'China';
 
+
 form.addEventListener('submit', (e) =>{
         e.preventDefault();
         const inputVal = input.value;
@@ -13,6 +14,7 @@ form.addEventListener('submit', (e) =>{
         const {main, name, sys, weather} = data;
         const icon = `https://openweathermap.org/img/wn/${
         weather[0]["icon"]}.png`;
+        
         const markup = `
             <div class="country">
                 <h2>${name} <sup class="short">${sys.country}</sup></h2>
@@ -28,7 +30,9 @@ form.addEventListener('submit', (e) =>{
                 <span>${weather[0]['description'].toUpperCase()}</span>
                 </div>
                 </div>
-        `
+        `;
+        console.log(markup);
+        
        weatherContainer.innerHTML= markup;
        console.log(weather[0]['icon'])
        
